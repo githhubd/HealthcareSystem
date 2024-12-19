@@ -2,37 +2,28 @@ public class Patient {
     private String name;
     private int age;
     private String ailment;
-
     public Patient(String name, int age, String ailment) {
         this.name = name;
         this.age = age;
-        this.ailment = ailment;
-    }
-
+        this.ailment = ailment; }
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public int getAge() {
         return age;
     }
-
     public void setAge(int age) {
         this.age = age;
     }
-
     public String getAilment() {
         return ailment;
     }
-
     public void setAilment(String ailment) {
         this.ailment = ailment;
     }
-
     @Override
     public String toString() {
         return "Patient{" +
@@ -47,37 +38,29 @@ public class MedicalProfessional {
     private String name;
     private String specialization;
     private int yearsOfExperience;
-
     public MedicalProfessional(String name, String specialization, int yearsOfExperience) {
         this.name = name;
         this.specialization = specialization;
         this.yearsOfExperience = yearsOfExperience;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public String getSpecialization() {
         return specialization;
     }
-
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
     }
-
     public int getYearsOfExperience() {
         return yearsOfExperience;
     }
-
     public void setYearsOfExperience(int yearsOfExperience) {
         this.yearsOfExperience = yearsOfExperience;
     }
-
     @Override
     public String toString() {
         return "MedicalProfessional{" +
@@ -87,42 +70,33 @@ public class MedicalProfessional {
                 '}';
     }
 }
-
 public class Hospital {
     private String name;
     private String location;
     private int numberOfBeds;
-
     public Hospital(String name, String location, int numberOfBeds) {
         this.name = name;
         this.location = location;
         this.numberOfBeds = numberOfBeds;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public String getLocation() {
         return location;
     }
-
     public void setLocation(String location) {
         this.location = location;
     }
-
     public int getNumberOfBeds() {
         return numberOfBeds;
     }
-
     public void setNumberOfBeds(int numberOfBeds) {
         this.numberOfBeds = numberOfBeds;
     }
-
     @Override
     public String toString() {
         return "Hospital{" +
@@ -137,7 +111,6 @@ public class Main {
         Patient patient = new Patient("John Doe", 30, "Flu");
         MedicalProfessional doctor = new MedicalProfessional("Dr. Smith", "General Physician", 10);
         Hospital hospital = new Hospital("City Hospital", "Downtown", 200);
-
         System.out.println(patient);
         System.out.println(doctor);
         System.out.println(hospital);
